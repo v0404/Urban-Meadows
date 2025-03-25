@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Meadows - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Urban Meadows</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+
+        <h1>Urban Meadows</h1>
+        <p>Revolutionizing urban gardening, one home at a time.</p>
+    </section>
+
+    <!-- First Carousel (Photo Slider) -->
+    <section class="carousel">
+        <h2>Our Work</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="work1.png" alt="Urban Garden 1">
+                <img src="work2.png" alt="Urban Garden 2">
+                <img src="work3.png" alt="Urban Garden 3">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="company-info">
+        <h2>About Urban Meadows</h2>
+        <p>Urban Meadows specializes in bringing sustainable, space-efficient gardening solutions to urban homes. Our
+            services include vertical gardening, hydroponics, and self-watering systems.</p>
+    </section>
+
+    <!-- Second Carousel (Photo Slider) -->
+    <section class="carousel">
+        <h2>Our Transformations</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="4.png" alt="Before and After Garden">
+                <img src="5.png" alt="Balcony Garden Transformation">
+                <img src="6.png" alt="Indoor Hydroponic Setup">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </section>
+
+    <!-- Alternating Image & Text Sections -->
+    <section class="info-section">
+        <div class="text">
+            <h2>Urban Gardening Made Easy</h2>
+            <p> Urban gardening makes it easy to grow fresh, organic food at home, even in small spaces. With methods
+                like vertical gardens and hydroponics, city dwellers can enjoy chemical-free produce while reducing
+                their carbon footprint. It not only promotes healthier eating but also reconnects people with nature,
+                creating a greener and more sustainable future</p>
+        </div>
+        <div class="image">
+            <img src="urban-garden.png" alt="Urban Gardening">
+        </div>
+    </section>
+
+    <section class="info-section reverse">
+        <div class="image">
+            <img src="vertical-garden.png" alt="Vertical Gardening">
+        </div>
+        <div class="text">
+            <h2>Vertical Gardening</h2>
+            <p> Vertical farming allows plants to grow upwards using stacked layers, making it perfect for small spaces.
+                It maximizes food production while using less water and soil, making it an eco-friendly solution for
+                cities. With methods like hydroponics and aeroponics, vertical farms produce fresh, pesticide-free
+                vegetables year-round, helping create a greener and healthier future.</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="text">
+            <h2>Hydroponics</h2>
+            <p> Hydroponics is a method of growing plants without soil, using nutrient-rich water instead. This system
+                allows plants to grow faster, use less water, and produce higher yields. Perfect for urban spaces,
+                hydroponics enables fresh, pesticide-free vegetables to be grown indoors or on rooftops, making it a
+                sustainable solution for modern cities.</p>
+        </div>
+        <div class="image">
+            <img src="hydroponics.png" alt="Hydroponics System">
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="contact-section">
+        <h2>Want to start your own urban garden?</h2>
+        <p>Join our growing community and transform your home with fresh, organic produce.</p>
+        <a href="services.html" class="btn">Get Started</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Urban Meadows | All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

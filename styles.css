@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background: #1b3024;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* Alternating Image & Text Sections */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.info-section .text {
+    flex: 1;
+    text-align: left;
+}
+
+.info-section .image {
+    flex: 1;
+}
+
+.info-section .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+body {
+    background-color: #0a0f0d;
+    color: #d4edda;
+    text-align: center;
+}
+
+header {
+    background: #000;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #81c784;
+}
+
+.company-info {
+    text-align: center;
+    background-color: #f4f4f4;
+    /* Light gray background */
+    padding: 50px;
+}
+
+.company-info h2 {
+    color: #2e7d32;
+    /* Dark green for better visibility */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.company-info p {
+    color: #333;
+    /* Dark gray text for better readability */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* General Section Styling */
+section {
+    width: 100%;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* Fix Spacing for Sections */
+.company-info,
+.carousel {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    min-height: 200px;
+    /* Ensures consistent height */
+}
+
+/* Fix Heading Alignment */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Prevents overlap */
+}
+
+/* Fix "Our Transformations" and "About Urban Meadows" shifting */
+.company-info,
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ensuring Carousel Doesn't Affect Other Sections */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 350px;
+    /* Fix height for consistent spacing */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Ensure Images in Carousel Stay in Fixed Height */
+.carousel-slide img {
+    width: 100%;
+    height: 350px;
+    /* Set a uniform height */
+    object-fit: cover;
+}
+
+.hero {
+    height: 100vh;
+    background: url('garden.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    color: #81c784;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #81c784;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 100px 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background: #000;
+    color: #81c784;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contact Form Styling */
+form {
+    background: #1b3024;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: #81c784;
+    color: black;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #66bb6a;
+}
+
+/* Banner Styling */
+.banner {
+    width: 100%;
+    height: 300px;
+    /* Adjust height if needed */
+    background: url('./banner.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* General Section Styling */
+section {
+    width: 100%;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* Fixing "Our Work" and "About Us" Positions */
+
+.company-info {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Ensuring Headings Stay in Place */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Company Info Section */
+.company-info {
+    text-align: center;
+    padding: 50px 10%;
+    background: #f4f4f4;
+}
+
+/* Alternating Image & Text Sections */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.info-section .text {
+    flex: 1;
+    text-align: left;
+}
+
+.info-section .image {
+    flex: 1;
+}
+
+.info-section .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px 10%;
+    background: #1b3024;
+    color: white;
+}
+
+.contact-section .btn {
+    display: inline-block;
+    background: #81c784;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-section .btn:hover {
+    background: #66bb6a;
+}
+
+/* Carousel Section */
+.carousel {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    /* Limits width */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    max-height: 500px;
+    /* Prevents image from being too tall */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
